@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grid Layout</title>
+  <link href="" rel="stylesheet" type="text/css" />
+
+  <style>
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 4fr 1fr;
+      gap: 20px;
+
+      padding: 10px;
+      outline: 2px dashed black;
+    }
+
+    .main{
+      text-align: center; /* Optional: Center text inside items */
+      padding: 10px; /* Optional: Add padding inside items */
+
+    }
+
+    .two{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      
+
+    }
+    .imgOne {
+      display: grid;
+      grid-column: span 2; /* Span across 2 columns */
+      grid-row: span 2; /* Span across 2 rows, if needed */
+      background-color: #e3f6f8 ; /* Optional: Add background for visibility */
+      align-items: center; /* Center content vertically */
+      justify-items: center; /* Center content horizontally */
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <div class="main">
+
+
+    <div class="one">
+      <p>Box one content</p>
+    </div>
+
+
+    <div class="two">
+
+      <div class="imgOne">
+        <img src="https://via.placeholder.com/150" alt="">
+      </div>
+
+    </div>
+
+
+    <div class="three">
+      <p>box three content</p>
+    </div>
+
+    <div class="four">
+      <p>box four content</p>
+    </div>
+
+    <div class="five">
+      <p>box five content</p>
+    </div>
+
+    <div class="six">
+      <p>box six content</p>
+    </div>
+
+    <div class="seven">
+      <p>box seven content</p>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

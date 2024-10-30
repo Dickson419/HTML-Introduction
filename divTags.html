@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Divs</title>
+
+    <style>
+
+      div {
+        <!-- border: black solid 10px; -->
+        margin: 10px;
+        padding: 10px;
+        width: 25%;
+        height: auto;
+        text-align: center;
+
+        position: absolute;
+
+      }
+
+      .one {
+        background-color: #f78b74;
+        top: 5%;
+        left: 10%;
+        border: red solid 10px;
+        width: 80%;
+      }
+
+      .two {
+        background-color: #66b2f5;
+        top: 20%;
+        left: 10%;
+        height: 45%;
+        border: blue solid 10px;
+      }
+
+      .three {
+        background-color: #77e68d;
+        top: 20%;
+        left: 40%;
+        width: 50%;
+        height: 45%;
+        border: green solid 10px;
+      }
+
+      .twoNestedA{
+        border: black solid 2px;
+        width: 35%;
+        height: 30%;
+        top: 20%;
+        left: 5%
+
+      }
+
+      .twoNestedB{
+        border: black solid 2px;
+        width: 35%;
+        height: 30%;
+        top: 20%;
+        right: 5%;
+
+      }
+
+      .bug{
+        background: url(first_.webp);
+        background-size: '300x300';
+}
+
+      }
+
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+  <div class="one">
+    One
+
+
+  </div>
+
+
+  <div class="two">
+    Two
+
+    <div class="twoNestedA">
+      First: Nested in div Two
+    </div>
+    <div class="twoNestedB">
+      Second: Nested in div Two
+    </div>
+
+  </div>
+
+
+  <div class="three">
+    Three
+    <div class="bug">
+      <img src="first_bug.webp" alt="" width='100%' height="95%">
+    </div>
+
+
+  </div>
+
+
+
+
+
+  </body>
+
+
+
+</html>
